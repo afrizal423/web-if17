@@ -46,8 +46,8 @@ class Kelas_c extends CI_Controller {
 		$nama_pembuat = $this->input->post('nama');
 		$nama_folder = $this->input->post('nama_folder');
 		$matkul = $this->input->post('matkul');
-		$structure = './kelas-c/'.$nama_folder;
-	if (!mkdir($structure, 0777, true)) {
+		$structure = './Folder_Tugas/kelas-c/'.$nama_folder;
+	if (!mkdir($structure, 0775, true)) {
 	die('Gagal membuat folder...');
 	}
 		$data = array(
@@ -135,29 +135,31 @@ class Kelas_c extends CI_Controller {
 	  function simpan_file(){
 		$nama_folder=$this->input->post('nama_folder');
 		
-		$config['upload_path'] = './kelas-c/'.$nama_folder; //path folder
+		$config['upload_path'] = './Folder_Tugas/kelas-c/'.$nama_folder; //path folder
 	    $config['allowed_types'] = '*'; //type yang dapat diakses bisa anda sesuaikan
-	    $config['encrypt_name'] = FALSE; //nama yang terupload nantinya
+	    $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	    $this->upload->initialize($config);
 	    if(!empty($_FILES['filefoto']['name'])){
 	        if ($this->upload->do_upload('filefoto')){
-	        	$gbr = $this->upload->data();
-	            //Compress Image
-	            $config['image_library']='gd2';
-	            $config['source_image']='./assets/images/'.$gbr['file_name'];
-	            $config['create_thumb']= FALSE;
-	            $config['maintain_ratio']= FALSE;
-	            $config['quality']= '60%';
-	            $config['width']= 710;
-	            $config['height']= 420;
-	            $config['new_image']= './assets/images/'.$gbr['file_name'];
-	            $this->load->library('image_lib', $config);
-	            $this->image_lib->resize();
-
-	            $nama_file=$gbr['file_name'];
-				$namapembuat=$this->input->post('namapembuat');
                 $nama_pengupload=$this->input->post('nama_pengupload');
+				$gbr = $this->upload->data();
+				$new_name                   = $nama_pengupload.'_'.$_FILES["filefoto"]['name'];
+        		$config['file_name']        = $new_name;
+	            //Compress Image
+	            // $config['image_library']='gd2';
+	            // $config['source_image']='./assets/images/'.$gbr['file_name'];
+	            // $config['create_thumb']= FALSE;
+	            // $config['maintain_ratio']= FALSE;
+	            // $config['quality']= '60%';
+	            // $config['width']= 710;
+	            // $config['height']= 420;
+	            // $config['new_image']= './assets/images/'.$gbr['file_name'];
+	            $this->load->library('upload', $config);
+	            // $this->image_lib->resize();
+
+	            $nama_file=$new_name;
+				$namapembuat=$this->input->post('namapembuat');
 
 				$this->m_folder_c->simpan_file($nama_folder,$namapembuat,$nama_file,$nama_pengupload);
 				redirect('kelas_tugas/kelas_c/listfolder');

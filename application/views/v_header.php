@@ -20,10 +20,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   
 </head>
 <body position: relative; min-height: 100%; top: 0px; oncontextmenu="return false" onkeydown="return true;" onmousedown="return true;">
-<div class="w3-deep-orange coba white-text batik" style="height: 25px;">&nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true">0838-5706-4300</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true">info@if17upnjatim.xyz</i></div>
+<div class="w3-deep-orange coba white-text batik" style="height: 25px;">&nbsp;&nbsp;
+<!-- <i class="fa fa-phone" aria-hidden="true">0838-5706-4300</i>&nbsp;&nbsp;&nbsp;&nbsp; -->
+<i class="fa fa-envelope" aria-hidden="true">info@if17upnjatim.xyz</i></div>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="http://if17upnjatim.xyz" class="brand-logo"><img src="<?php echo base_url()?>/assets/logo.png" style="height: responsive; width: 250px; margin-bottom:10px; margin-left:60px;"></a>
+        <a id="logo-container" href="<?php echo base_url()?>" class="brand-logo"><img src="<?php echo base_url()?>/assets/logo.png" style="height: responsive; width: 250px; margin-bottom:10px; margin-left:60px;"></a>
         <ul class="right hide-on-med-and-down ">
           <li><a class='dropdown-button' data-activates='progdi'>Profil Progdi</a></li>
           <li><a class='dropdown-button' data-activates='akademik'>Akademik</a></li>
@@ -36,42 +38,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <ul id='tugas' class='dropdown-content jarak'>
       <li><a class="btn disabled"><b> </b></a></li>
         <li class="divider"></li>  
-        <li><a href="http://if17upnjatim.xyz/tugas">upload tugas</a></li>
+        <li><a href="<?php echo base_url()?>tugas">upload tugas</a></li>
     </ul>
     <ul id='progdi' class='dropdown-content jarak'>
       <li><a class="btn disabled"><b>Profil Program Studi</b></a></li>
         <li class="divider"></li>  
-        <li><a href="http://if17upnjatim.xyz/visimisi">Visi & Misi</a></li>
-        <li><a href="http://if17upnjatim.xyz/sejarahprodi">Sejarah Prodi Teknik Informatika</a></li>
+        <li><a href="<?php echo base_url()?>visimisi">Visi & Misi</a></li>
+        <li><a href="<?php echo base_url()?>sejarahprodi">Sejarah Prodi Teknik Informatika</a></li>
     </ul>
     <ul id='akademik' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Akademik</b></a></li>
           <li class="divider"></li>  
           <li><a class='#' data-activates='klsmahasiswa'>Daftar Peserta Mata kuliah</a></li>
-          <li><a href="http://if17upnjatim.xyz/tugas">upload tugas</a></li>
+          <li><a href="<?php echo base_url()?>tugas">upload tugas</a></li>
     </ul>
     <ul id='klsmahasiswa' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Mata Kuliah Kelas</b></a></li>
           <li class="divider"></li>  
-          <li><a href="http://if17upnjatim.xyz/if17/dosen">Kelas A</a></li>
-          <li><a href="http://if17upnjatim.xyz/if17/dosen">Kelas B</a></li>
-          <li><a href="http://if17upnjatim.xyz/if17/dosen">Kelas C</a></li>
+          <li><a href="<?php echo base_url()?>dosen">Kelas A</a></li>
+          <li><a href="<?php echo base_url()?>dosen">Kelas B</a></li>
+          <li><a href="<?php echo base_url()?>dosen">Kelas C</a></li>
     </ul>
     <ul id='dosen' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Dosen</b></a></li>
           <li class="divider"></li>  
-          <li><a href="http://if17upnjatim.xyz/dosen">Dosen dan Tenaga Kependidikan</a></li>
+          <li><a href="<?php echo base_url()?>dosen">Dosen dan Tenaga Kependidikan</a></li>
     </ul>
     <ul id='berita' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Berita & Informasi</b></a></li>
           <li class="divider"></li>  
-          <li><a href="http://if17upnjatim.xyz/index.php#berita">Berita</a></li>
-          <li><a href="http://if17upnjatim.xyz/index.php#info">Informasi</a></li>
+          <li><a href="<?php echo base_url()?>index.php#berita">Berita</a></li>
+          <li><a href="<?php echo base_url()?>index.php#info">Informasi</a></li>
       </ul>
       <ul id='mahasiswa' class='dropdown-content jarak'>
           <li><a class="btn disabled"><b>Mahasiswa Angkatan<br> 2018</b></a></li>
             <li class="divider"></li>  
-            <li><a href="http://if17upnjatim.xyz/mahasiswa">Profil Mahasiswa</a></li>
+            <li><a href="<?php echo base_url()?>mahasiswa">Profil Mahasiswa</a></li>
         </ul>
        <!-- Tampilan Mobile-->
   

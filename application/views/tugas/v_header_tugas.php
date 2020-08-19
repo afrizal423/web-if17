@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="w3-deep-orange coba white-text" style="height: 25px;">&nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true">0838-5706-4300</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true">info@if17upnjatim.xyz</i></div>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"><img src="http://afrizal-my.hol.es/tf17/logo.png" style="height: responsive; width: 250px; margin-bottom:10px; margin-left:60px;"></a>
+        <a id="logo-container" href="#" class="brand-logo"><img src="<?php echo base_url()?>/assets/logo.png" style="height: responsive; width: 250px; margin-bottom:10px; margin-left:60px;"></a>
         <ul class="right hide-on-med-and-down ">
           <?php if($this->session->userdata('nama')=='kelas A'):?>
           <li><a class='dropdown-button' data-activates='foldera'>Folder A</a></li>
