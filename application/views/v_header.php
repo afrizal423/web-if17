@@ -22,15 +22,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body position: relative; min-height: 100%; top: 0px; oncontextmenu="return false" onkeydown="return true;" onmousedown="return true;">
 <div class="w3-deep-orange coba white-text batik" style="height: 25px;">&nbsp;&nbsp;
 <!-- <i class="fa fa-phone" aria-hidden="true">0838-5706-4300</i>&nbsp;&nbsp;&nbsp;&nbsp; -->
-<i class="fa fa-envelope" aria-hidden="true">info@if17upnjatim.xyz</i></div>
+<!-- <i class="fa fa-envelope" aria-hidden="true">info@if17upnjatim.xyz</i> -->
+</div>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="<?php echo base_url()?>" class="brand-logo"><img src="<?php echo base_url()?>/assets/logo.png" style="height: responsive; width: 250px; margin-bottom:10px; margin-left:60px;"></a>
         <ul class="right hide-on-med-and-down ">
           <li><a class='dropdown-button' data-activates='progdi'>Profil Progdi</a></li>
-          <li><a class='dropdown-button' data-activates='akademik'>Akademik</a></li>
+          <!-- <li><a class='dropdown-button' data-activates='akademik'>Akademik</a></li> -->
           <li><a class='dropdown-button' data-activates='dosen'>Dosen</a></li>
-          <li><a class='dropdown-button' data-activates='berita'>Berita & Info</a></li>
+          <li><a class='dropdown-button' href="<?php echo base_url()?>">Berita & Info</a></li>
           <li><a class='dropdown-button' data-activates='mahasiswa'>Kemahasiswaan</a></li>
          
         </ul>
@@ -42,16 +43,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
     <ul id='progdi' class='dropdown-content jarak'>
       <li><a class="btn disabled"><b>Profil Program Studi</b></a></li>
-        <li class="divider"></li>  
-        <li><a href="<?php echo base_url()?>visimisi">Visi & Misi</a></li>
+        <li class="divider"></li> 
+         
+        <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=60">Visi & Misi</a></li>
         <li><a href="<?php echo base_url()?>sejarahprodi">Sejarah Prodi Teknik Informatika</a></li>
     </ul>
-    <ul id='akademik' class='dropdown-content jarak'>
+    <!-- <ul id='akademik' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Akademik</b></a></li>
           <li class="divider"></li>  
           <li><a class='#' data-activates='klsmahasiswa'>Daftar Peserta Mata kuliah</a></li>
           <li><a href="<?php echo base_url()?>tugas">upload tugas</a></li>
-    </ul>
+    </ul> -->
     <ul id='klsmahasiswa' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Mata Kuliah Kelas</b></a></li>
           <li class="divider"></li>  
@@ -62,7 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <ul id='dosen' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Dosen</b></a></li>
           <li class="divider"></li>  
-          <li><a href="<?php echo base_url()?>dosen">Dosen dan Tenaga Kependidikan</a></li>
+          <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=2088">Dosen</a></li>
+          <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=2118">Tenaga Kependidikan</a></li> 
     </ul>
     <ul id='berita' class='dropdown-content jarak'>
         <li><a class="btn disabled"><b>Berita & Informasi</b></a></li>
@@ -71,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li><a href="<?php echo base_url()?>index.php#info">Informasi</a></li>
       </ul>
       <ul id='mahasiswa' class='dropdown-content jarak'>
-          <li><a class="btn disabled"><b>Mahasiswa Angkatan<br> 2018</b></a></li>
+          <li><a class="btn disabled"><b>Mahasiswa Angkatan<br> 2017</b></a></li>
             <li class="divider"></li>  
             <li><a href="<?php echo base_url()?>mahasiswa">Profil Mahasiswa</a></li>
         </ul>
@@ -84,18 +87,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <a hidden href="#!user"><img class="circle" src="<?php echo base_url()?>/assets/logo.png" style="height:responsive;width:responsive;"></a>
       <a hidden href="#!name"><span class="white-text name">Tifatulas</span></a>
-      <a href="#!email"><span class="white-text email">info@if17upnjatim.xyz</span></a>
+      <a href="#!email"><span class="white-text email">-</span></a>
     </div></li>
     <li>
       <div class="collapsible-header black-text"><i class="material-icons orange-text">info</i>Profil Progdi</div>
       <div class="collapsible-body black-text">
         <ul>
-          <li><a href="http://if17upnjatim.xyz/visimisi">Visi dan Misi Progdi</a></li>
-          <li><a href="http://if17upnjatim.xyz/sejarahprodi">Sejarah Progdi</a></li>
+        <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=60">Visi & Misi</a></li>
+        <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=2361">Sejarah Prodi</a></li>
         </ul>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <div class="collapsible-header black-text"><i class="material-icons orange-text">receipt</i>Akademik</div>
       <div class="collapsible-body black-text">
         <ul>
@@ -105,12 +108,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li><a href="#!">Kelas C</a></li>
         </ul>
       </div>
-    </li>
-    <li>
+    </li>-->
+    <li> 
       <div class="collapsible-header black-text"><i class="material-icons orange-text">school</i>Dosen</div>
       <div class="collapsible-body black-text">
         <ul>
-          <li><a href="http://if17upnjatim.xyz/dosen">Dosen dan Tenaga Kependidikan</a></li>  
+          <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=2088">Dosen</a></li>
+          <li><a target="_blank" href="https://if.upnjatim.ac.id/?page_id=2118">Tenaga Kependidikan</a></li>   
         </ul>
       </div>
     </li>
@@ -118,8 +122,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="collapsible-header black-text"><i class="fa fa-bullhorn orange-text"></i>Berita & Info</div>
       <div class="collapsible-body black-text">
         <ul>
-          <li><a href="#!">Berita</a></li>
-          <li><a href="#!">Info</a></li>
+          <li><a href="<?php echo base_url()?>">Berita</a></li>
+          <li><a href="<?php echo base_url()?>">Info</a></li>
         </ul>
       </div>
     </li>
@@ -127,18 +131,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="collapsible-header black-text"><i class="fa fa-users orange-text"></i>Kemahasiswaan</div>
       <div class="collapsible-body black-text">
         <ul>
-          <li><a href="http://if17upnjatim.xyz/mahasiswa">List Nama Mahasiswa Angkatan 2018 </a></li>
+          <li><a href="<?php echo base_url()?>/mahasiswa">List Nama Mahasiswa Angkatan 2017 </a></li>
         </ul>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <div class="collapsible-header black-text"><i class="material-icons orange-text">backup</i>Upload Tugas</div>
       <div class="collapsible-body black-text">
         <ul>
-          <li><a href="http://if17upnjatim.xyz/tugas">Upload Tugas</a></li>
+          <li><a href="<?php echo base_url()?>tugas">Upload Tugas</a></li>
         </ul>
       </div>
-    </li>
+    </li> -->
 
 
 

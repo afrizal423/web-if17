@@ -158,8 +158,10 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4" style="font-size:18px;"><?php echo $row->nama;?><i class="material-icons right">close</i></span>
-		  <p>NPM : <?php echo $row->npm;?><!--<br>Kelas : <?php echo $row->kelas;?>--><br>Tanggal Lahir : <?php echo date("d-M-Y", strtotime($row->tanggal_lahir));?>
-			<br>Hobby : <?php echo $row->hobby;?><br>Kata Mutiara : <?php echo $row->kata_mutiara;?></p>
+		  <p>NPM : <?php echo $row->npm;?><!--<br>Kelas : <?php echo $row->kelas;?>-->
+		  <!-- <br>Tanggal Lahir : <?php echo date("d-M-Y", strtotime($row->tanggal_lahir));?> -->
+			<!-- <br>Hobby : <?php echo $row->hobby;?><br>Kata Mutiara : <?php echo $row->kata_mutiara;?> -->
+		</p>
 		  <h6 hidden><?php echo $no;?></h6>
         </div>
 	  </div><?php

@@ -62,7 +62,7 @@ class home extends CI_Controller {
 	function viewBerita(){
 		$kode=$this->uri->segment(3); //Uri segment 3 berupa data berbentuk id yang dikirim
 		$x['data']=$this->m_berita->get_berita_by_kode($kode);
-		$this->load->view('v_header_berita', $x);
+		$this->load->view('v_header', $x);
 		$this->load->view('admin/v_post_view',$x);
 		$this->load->view('v_footer');
 		
@@ -70,7 +70,7 @@ class home extends CI_Controller {
 	function viewInfo(){
 		$kode=$this->uri->segment(3); //Uri segment 3 berupa data berbentuk id yang dikirim
 		$x['datainfo']=$this->m_info->get_berita_by_kode($kode);
-		$this->load->view('v_header_info', $x);
+		$this->load->view('v_header', $x);
 		$this->load->view('admin/v_post_viewinfo',$x);
 		$this->load->view('v_footer');
 		

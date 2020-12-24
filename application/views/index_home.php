@@ -1,14 +1,14 @@
 <div class="slider aku">
         <ul class="slides">
             <li>
-                <img src="<?php echo base_url()?>/assets/gambar/aku.jpg" class="show-on-small"> <!-- random image -->
+                <img src="<?php echo base_url()?>/assets/banner.jpg" class="show-on-small"> <!-- random image -->
                 <div class="caption left-align" style="margin-top: 60px;">
                   <h3>Selamat Datang Di Website Kami</h3>
                   <h5 class="light text-lighten-1">Tifatulas! Kreatif!Inovatif!Inspiratif!</h5>
                 </div>
               </li>    
           <li>
-            <img src="http://ifupnjatim.ac.id/progditf/wp-content/uploads/2017/07/MG_0428.jpg"> <!-- random image -->
+            <img src="<?php echo base_url()?>/assets/gambar/aku.jpg"> <!-- random image -->
             <div class="caption center-align ">
               <h3>Gedung Giri Santika</h3>
              
@@ -86,8 +86,14 @@ foreach ($data->result_array() as $i) :
 
 </div>
 <?php endforeach;?>
-</div>
 
+
+</div>
+<?php
+if ($data->num_rows()  == 0){
+  echo "Berita Masih Kosong";
+}
+?>
 </div>
 </div>
 <div class="col-sm-6 slideanim">
@@ -109,6 +115,11 @@ foreach ($datainfo->result_array() as $i) :
 </div>
 <?php endforeach;?>
 </div>
+<?php
+if ($datainfo->num_rows()  == 0){
+  echo "Informasi Masih Kosong";
+}
+?>
 </div>
 </div>
 </div>

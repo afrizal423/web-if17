@@ -5,7 +5,7 @@
 <div class="container-fluid">
 		<div class="col-md-8 col-md-offset-2 w3-card">
 			<h4><?php echo $b['berita_judul'];?></h4>
-			<h6><?php echo $b['berita_tanggal'];?></h6><hr/>
+			<h6><?php echo date("d-M-Y", strtotime($b['berita_tanggal']));?></h6><hr/>
 			<img class="img-responsive" src="<?php echo base_url().'assets/images/'.$b['berita_image'];?>">
 			<?php echo $b['berita_isi'];?>
 		</div>

@@ -1,7 +1,7 @@
 <footer class="row grey darken-3 w3-center slideanim">
   
     
-<div class="col-sm-3 slideanim white-text" ><h5>Biro</h5>
+<div class="col-sm-4 slideanim white-text" ><h5>Biro</h5>
   
     <ul>
     <li><a href="http://roadmik.upnjatim.ac.id/" class="white-text">Biro Administrasi Akademik</a></li>
@@ -11,7 +11,7 @@
     </ul>
 </div>
 
-<div class="col-sm-3 slideanim white-text"><h5>Unit Pelaksana Teknis</h5>
+<div class="col-sm-4 slideanim white-text"><h5>Unit Pelaksana Teknis</h5>
   <ul>
     <li><a href="http://telematika.upnjatim.ac.id/" class="white-text">UPT - Telematika</a></li>
     <li><a href="http://library.upnjatim.ac.id/" class="white-text">UPT - Perpustakaan</a></li>
@@ -20,7 +20,7 @@
   </ul>
 </div>
 
-<div class="col-sm-3 slideanim white-text"><h5>Institusi</h5>
+<div class="col-sm-4 slideanim white-text"><h5>Institusi</h5>
   <ul>
     <li><a href="http://bpm.upnjatim.ac.id/" class="white-text">BPM</a></li>
     <li><a href="http://lppm.upnvjatim.ac.id/" class="white-text">LPPM</a></li>
@@ -31,21 +31,23 @@
   
 </div>
 
-
+<!-- 
 <p><a href="http://info.flagcounter.com/NLKj"><img src="//s07.flagcounter.com/count/NLKj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
 <p class="white-text"><?php 
  //Gets the IP address
  $ip = getenv("REMOTE_ADDR") ; 
  Echo "Your IP is " . $ip; 
- ?> </p>
+ ?> </p> -->
  </div>
 </div>
 
 </footer>
  <div class="footer-copyright grey darken-4">
             <div class="white-text">
-            © 2018 Copyright Tifatulas
-            <a class="grey-text text-lighten-4 right" href="http://ifupnjatim.ac.id">Son Of ifupnjatim.ac.id</a>
+            &copy; <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script> Copyright Tifatulas
+            <a class="grey-text text-lighten-4 right" href="http://if.upnjatim.ac.id" target="_blank">Son Of if.upnjatim.ac.id</a>
             </div>
           </div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
