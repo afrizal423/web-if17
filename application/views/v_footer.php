@@ -1,32 +1,28 @@
 <footer class="row grey darken-3 w3-center slideanim">
   
     
-<div class="col-sm-4 slideanim white-text" ><h5>Biro</h5>
+<div class="col-sm-4 slideanim white-text" ><h5>Komunitas</h5>
   
     <ul>
-    <li><a href="http://roadmik.upnjatim.ac.id/" class="white-text">Biro Administrasi Akademik</a></li>
-    <li><a href="http://biroumumupn2014.blogspot.com/" class="white-text">Biro Administrasi Umum</a></li>
-    <li><a href="http://rokeu.upnjatim.ac.id/" class="white-text">Biro Rencana Anggaran Keuangan</a></li>
-    <li><a href="http://rokermawa.upnjatim.ac.id/" class="white-text">Biro Kerjasama Kemahasiswaan</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/ilcupnjatim/" class="white-text">Informatics Learning Community</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/kolu_upn_jatim/" class="white-text">Komunitas Linux</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/robotics_upnjatim/" class="white-text">Robotics</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/mdcomupnvjatim/" class="white-text">MobileDev</a></li>
     </ul>
 </div>
 
-<div class="col-sm-4 slideanim white-text"><h5>Unit Pelaksana Teknis</h5>
+<div class="col-sm-4 slideanim white-text"><h5>Organisasi</h5>
   <ul>
-    <li><a href="http://telematika.upnjatim.ac.id/" class="white-text">UPT - Telematika</a></li>
-    <li><a href="http://library.upnjatim.ac.id/" class="white-text">UPT - Perpustakaan</a></li>
-    <li><a href="https://siamik.upnjatim.ac.id/poliklinik/" class="white-text">UPT - Poliklinik</a></li>
-    <li><a href="http://pusbasa.upnjatim.ac.id/" class="white-text">UPT - Pusat Bahasa</a>          </li>
+    <li><a target="_blank" href="https://www.instagram.com/himatifaupnvjatim/" class="white-text">HIMATIFA</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/bemfasilkom.upnjatim/" class="white-text">BEM Fasilkom</a></li>
   </ul>
 </div>
 
 <div class="col-sm-4 slideanim white-text"><h5>Institusi</h5>
   <ul>
-    <li><a href="http://bpm.upnjatim.ac.id/" class="white-text">BPM</a></li>
-    <li><a href="http://lppm.upnvjatim.ac.id/" class="white-text">LPPM</a></li>
-    <li><a href="http://buu.upnjatim.ac.id/" class="white-text">BUU</a></li>
-    <li><a href="http://p3ai.upnjatim.ac.id/" class="white-text">P3AI</a></li>
-    <li><a href="http://sektum.upnjatim.ac.id/" class="white-text">Sekertariat Umum</a>          </li>
+    <li><a target="_blank" href="http://if.upnjatim.ac.id/" class="white-text">Prodi Informatika</a></li>
+    <li><a target="_blank" href="http://fik.upnjatim.ac.id/" class="white-text">Fakultas Ilmu Komputer</a></li>
+    <li><a target="_blank" href="http://www.upnjatim.ac.id/" class="white-text">UPN "Veteran" Jawa Timur</a></li>
   </ul>
   
 </div>
@@ -123,6 +119,11 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+
+console.log('%c%s',
+            'color: blue; background: yellow; font-size: 24px;','Project ini udah lama banget! jadi maaf kalo banyak kurangnya!!!');
+console.log('%c%s',
+            'color: white; background: blue; font-size: 20px;','Development By Afrizal Muhammad Yasin')
 </script>
 
 </body>

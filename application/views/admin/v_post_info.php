@@ -25,8 +25,8 @@
 				<td><a href="<?php echo base_url().'post_agenda/view/'.$id;?>"><?php echo $judul;?></a></td>
 			
 				<td>
-			      <?php echo anchor('..admin/editinfo/'.$id,'Edit'); ?></td>
-                             <td> <?php echo anchor('..admin/hapusinfo/'.$id,'Hapus'); ?>
+			      <?php echo anchor('admin/editinfo/'.$id,'Edit'); ?></td>
+                             <td> <?php echo anchor('admin/hapusinfo/'.$id,'Hapus'); ?>
 			</td>
 			</tr></tbody>
 			<?php endforeach;?>

@@ -183,7 +183,7 @@ padding:3px;
   padding: 50%; 
 }
 .batik{
-  background-image: url("http://192.168.0.7/if17/assets/batik.png");
+  background-image: url("http://if17-upnjatim.herokuapp.com/assets/batik.png");
   }
 .a{
   border: black;

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Aug 19, 2020 at 06:15 PM
--- Server version: 5.7.31-log
--- PHP Version: 7.3.6
+-- Host: localhost
+-- Generation Time: Dec 25, 2020 at 12:37 PM
+-- Server version: 8.0.13-4
+-- PHP Version: 7.2.24-0ubuntu0.18.04.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,8 +19,102 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `afrizalm_if17`
+-- Database: `DZadZmY09X`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ci_sessions`
+--
+
+CREATE TABLE `ci_sessions` (
+  `id` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `ip_address` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `data` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `ci_sessions`
+--
+
+INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
+('01nibsuvfsnqbejilmrk4qpcp2h8vnms', '10.69.24.230', 1608823520, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333532303b),
+('0676v3l8n7haov07qtk1im3hh9ui9ebc', '10.31.112.211', 1608826784, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832363734333b),
+('0gas7vrsomln6o0m0v6jukqp3t16hjhj', '10.41.173.187', 1608824597, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343531333b),
+('0gfgge4o7srn6shfv582p4gs75elt22b', '10.171.230.57', 1608828848, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832383834383b),
+('1l5k75e531qj8k13d35pqsuka4m6cf2r', '10.35.250.120', 1608819015, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831393031353b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('1p3ql4enrq8628pss666lu4jk3fs25g0', '10.35.227.185', 1608820923, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832303932333b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('1plmg7khdmmlu2qrjnllfegmcroaq1t5', '10.138.162.166', 1608824516, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343531363b),
+('3uerldbo8h6rr7cq71fusdusn7vo11nv', '10.41.220.10', 1608823416, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333431363b),
+('4bbtnbnoam2hqh4h8mfek5oi2e3tp7n1', '10.111.171.190', 1608821532, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832313533323b),
+('4jmur0ej230amata2m869a3p836f6t3b', '10.35.184.226', 1608823749, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333734383b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('53eis3ats173raa5ij42h3oc051s559o', '10.52.9.178', 1608823529, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333532393b),
+('5491mnp7541old2f55007n5q955be4ha', '10.63.41.14', 1608849450, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383834393435303b),
+('6g4301cd4a8fvv75q7l53q82c4jao77a', '10.37.232.57', 1608824696, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343639363b),
+('7286nu0l80aprqh2o8fjj1riddsmj7p8', '10.35.136.190', 1608824480, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343438303b),
+('76qeuk5ltn4gj9ms8aaf993glb3frok9', '10.37.176.22', 1608833249, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383833333030343b),
+('7lgtig592dna0v6b6cj5pqffusck2rs8', '10.69.244.94', 1608819847, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831393834373b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('7vlnqs1r9hsp2dbr4tubmrsh9sdnqgto', '10.47.250.44', 1608853996, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835333939363b),
+('851r148orn8ophe4o2rrj4cr5247p6ge', '10.5.206.253', 1608858879, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835383837393b),
+('8ee9hv3a7hkhjajhnbh4fuif32m8b37p', '10.7.195.59', 1608824183, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343038333b),
+('8vfap4snr34oa6qeoh5ai6t6iomdi6f8', '10.109.140.73', 1608820873, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832303837333b),
+('91lrgoeakssqmhij5omhs2v8e93995jd', '10.63.192.246', 1608823536, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333533353b),
+('94e3c5dsj3ngjg6fa48smmnrmkj706oo', '10.9.247.118', 1608825498, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832353439383b),
+('9qbtcsq853ippb52kfci11kkkdclgk83', '10.69.237.10', 1608818846, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831383834363b),
+('9t7v6ul96ddjtg4ane0oml5et6k5ptek', '10.71.137.172', 1608823159, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333135393b),
+('ab92v9qo1htdtm16a9ud851covvj17fv', '10.150.246.196', 1608823818, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333831383b),
+('adss9t0b3sdvs407k5cg7lajfp2hd1pe', '10.69.85.146', 1608823647, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333634373b),
+('ahlhqfukgl8mco10an8e0ig7oo8r7udb', '10.16.190.48', 1608823807, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333830373b),
+('atl9lnn6ltbg915kjdgckar8aniikq5l', '10.35.179.103', 1608822540, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832323534303b),
+('b3gcco7a20hkl2poth3smveifc2o2bcu', '10.30.212.31', 1608857782, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835373738323b),
+('b7tfi47j51hifrmbalf8bi8e6l4i53jj', '10.79.224.171', 1608825027, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832353032373b),
+('b8kv5q9btfpqfnq5gc1bu41rs4q4l7hm', '10.37.156.31', 1608824480, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343438303b),
+('bi5ke22hmfgqqhriqa357h0jpk4nkpbc', '10.63.23.236', 1608823808, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333830383b),
+('bk5gg24qrabs0kn3t9p5sptg5uk34vr6', '10.11.162.79', 1608822492, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832323439323b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('br004ns89gs2o5hc3efimvd7f765r0lm', '10.9.216.41', 1608819812, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831393831323b),
+('c875foda6re59764t72uohis99k807iu', '10.13.148.247', 1608824582, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343538323b),
+('cqjq6v07u0fu650efmmv8so2mdlmdn7o', '10.30.214.102', 1608823818, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333831383b),
+('f9j9sdhf97kbs8aij77j2aofa4cmioik', '10.102.182.112', 1608824480, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343438303b),
+('g8vj53a6ioprf6k6iij0h2a4gh362q4u', '10.16.251.130', 1608849451, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383834393435303b),
+('gaordt68euabhrhg9c8uljd921mo2jv8', '10.41.141.207', 1608818473, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831383437333b),
+('gk93b6b70p5q9lgjja459o4buduejkk1', '10.35.222.75', 1608823666, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333636363b),
+('h2fbfrgj5ds8sagk9bam62iuvfrim0r6', '10.69.234.207', 1608823707, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333634373b),
+('h68livis55sro7out9qa3o28d5ki3bud', '10.93.223.38', 1608854055, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835343035353b),
+('h6euvrmuuql4c0u1f2k7gpdedg6ttb65', '10.63.151.139', 1608855617, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835353631363b),
+('hbr1a3uq6go5fpa453d3qfts2pnmcbsf', '10.73.248.115', 1608888962, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383838383936323b),
+('ijmtlcfthr32babucirrrk85ujiqbma5', '10.43.152.156', 1608823452, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333435323b),
+('j2vv52qki16av8cr8e3ibl47aldl7ho6', '10.138.162.166', 1608842664, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383834323635333b),
+('j812qflqme3u9fsats8l4misdm4o6pkh', '10.43.188.220', 1608842653, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383834323635333b),
+('jrbqpl5f55mucvvdpo81fe6prgoges6q', '10.41.153.135', 1608823552, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333435393b),
+('kdthrndmmetrcu3boup0a2focas0418o', '10.5.185.29', 1608818524, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831383339383b),
+('kivigrnje9jfjqoquv2i37h0ce678oc1', '10.69.173.87', 1608823712, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333731313b),
+('kksrunsi5e302lk17do1d0gd9152tc5u', '10.31.251.32', 1608824696, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343639363b),
+('lc3domuc6hr35v52iu6neu467gu9h443', '10.7.214.204', 1608822151, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832323135313b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('lkojga2cav3302o0ql1069t18rrq15vu', '10.43.233.181', 1608827843, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832373834333b),
+('lkvbecs9jengdg7hafmvmb9dv7dh0u4k', '10.31.251.32', 1608817824, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383831373735343b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('lt4brajrus86jihehqh9mnmtvj8uar0c', '10.155.219.74', 1608823224, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333232343b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('m7l3glbh4ic3d4tgd99iuhl2jbo5ff9n', '10.7.155.197', 1608821518, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832313531383b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('mlsmgirfv6r7iibpobq8orqr7n08epfm', '10.145.69.143', 1608868003, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383836383030323b),
+('mqq7rsbigslhcore778jrfpcisehm3gh', '10.30.235.17', 1608823806, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333736323b),
+('mrhgr9gb2j6fjk4p4qgqk85719hj0m8u', '10.69.31.173', 1608823519, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333531383b),
+('p5usp25p5k8d7d1ac2eglifu5459eck0', '10.69.244.94', 1608823808, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333830383b),
+('pblmfdis8rudtn4nm687q0u5ofltsavb', '10.35.250.120', 1608823395, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333339353b),
+('qb0othaochjob684h5vvirtlk8rpqgau', '10.158.213.109', 1608823748, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333734383b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('qsgfuc6qsd8nkr2sjvpm7ksdru67mt8v', '10.63.23.236', 1608858927, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383835383837393b),
+('r3o1nn3bacpo9dmim5qr15lh36f6j9ji', '10.43.250.98', 1608828880, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832383834383b),
+('rj7o8nqfnmequ9uc3uf5tsh4e5r5l4pk', '10.63.30.156', 1608823394, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333339343b),
+('rndsrurm6vn8f89ibj77a4e29aj6b5ka', '10.148.121.8', 1608820516, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832303531363b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('rv1o7bdvpd9jojqadr8akukhgnior61c', '10.136.138.43', 1608820167, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832303136373b6c6f676765645f696e7c733a31323a225375646168204c6f6767696e223b69647c733a313a2233223b757365726e616d657c733a373a22616672697a616c223b6c6576656c7c4e3b6e616d617c733a373a22616672697a616c223b7374617475737c733a353a226c6f67696e223b),
+('tmk8899sicpvikjdrr16iqnlenfko3vt', '10.159.227.245', 1608823268, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333236383b),
+('tnt4glk85jk5a5sn9rnutt6jm9r9e873', '10.51.205.51', 1608823808, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333830383b),
+('u4nap903s8udl3rptv0vd8kgbi4v9gqt', '10.69.161.99', 1608822220, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832323232303b),
+('u56m74jau7r0vqnmrkiddmori2chh6br', '10.5.233.91', 1608822198, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832323139383b),
+('u5l8fhcdi5iln0vii3vq0ghkkobnqmbg', '10.95.209.15', 1608824269, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832343236383b),
+('v83a68ecvviskepmn1amfasil0n2vb5q', '10.69.66.119', 1608897429, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383839373432393b),
+('v9c30i09htalcc021rnh1nfeprpl6f8e', '10.33.162.24', 1608823818, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832333831383b),
+('vn4lccbr88tslbl8cmekm651nf4tpn57', '10.95.177.213', 1608820241, 0x5f5f63695f6c6173745f726567656e65726174657c693a313630383832303234313b);
 
 -- --------------------------------------------------------
 
@@ -61,10 +155,10 @@ CREATE TABLE `file_kelasc` (
 -- Dumping data for table `file_kelasc`
 --
 
-INSERT INTO `file_kelasc` (`id`, `nama_folder`, `namapembuat`, `nama_file`, `nama_pengupload`, `waktu_upload`) VALUES
-(4, 'new', 'Muhammad Iqbal Dwi Fa', 'carbon.png', 'new guys', '2018-12-25 04:54:59'),
-(5, 'new', 'Muhammad Iqbal Dwi Fa', 'OneSignal-Web-SDK-HTTPS-Integration-Files.zip', 'http', '2018-12-25 06:43:54'),
-(6, 'new', 'Muhammad Iqbal Dwi Fa', 'Asmaul_Husna_-_Hijjaz.mp3', 'Mama', '2018-12-25 11:59:19');
+INSERT INTO `file_kelasc` (`id`, `nama_folder`, `namapembuat`, `nama_file`, `nama_pengupload`) VALUES
+(4, 'new', 'Muhammad Iqbal Dwi Fa', 'carbon.png', 'new guys'),
+(5, 'new', 'Muhammad Iqbal Dwi Fa', 'OneSignal-Web-SDK-HTTPS-Integration-Files.zip', 'http'),
+(6, 'new', 'Muhammad Iqbal Dwi Fa', 'Asmaul_Husna_-_Hijjaz.mp3', 'Mama');
 
 -- --------------------------------------------------------
 
@@ -84,8 +178,8 @@ CREATE TABLE `folder_kelasc` (
 -- Dumping data for table `folder_kelasc`
 --
 
-INSERT INTO `folder_kelasc` (`id`, `nama_pembuat`, `nama_folder`, `mata_kuliah`, `waktu_create`) VALUES
-(3, 'Muhammad Iqbal Dwi Fa', 'new', 'Pemrograman Berorientasi Objek', '2018-12-25 04:54:37');
+INSERT INTO `folder_kelasc` (`id`, `nama_pembuat`, `nama_folder`, `mata_kuliah`) VALUES
+(3, 'Muhammad Iqbal Dwi Fa', 'new', 'Pemrograman Berorientasi Objek');
 
 -- --------------------------------------------------------
 
@@ -232,17 +326,6 @@ CREATE TABLE `tbl_berita` (
   `berita_tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbl_berita`
---
-
-INSERT INTO `tbl_berita` (`berita_id`, `id_judul`, `berita_judul`, `berita_isi`, `berita_image`, `berita_tanggal`) VALUES
-(14, '286_mahasiswa', '286 Mahasiswa Latih Keberanian dan Kemampuan Individu dalam Training of Trainers dan Outbond Bidikmisi ', '<p>Pembentukan karakter mahasiswa Bela Negara selalu ditekankan oleh UPN Veteran Jawa Timur sejak dini, hal ini terlihat dari acara Training of Trainers Outbond &ldquo;Mencetak Intelektual Muda sebagai Pilar Pembangunan Bangsa&rdquo; bagi mahasiswa bidikmisi tahun ajaran 2017 &ndash; 2018 pada 22 -24 Desember 2017.</p>\r\n\r\n<p>Acara yang diikuti oleh 286 mahasiswa semester 1 dari 7 fakultas dan dibuat oleh Bidang Kemahasiswaan (BAKPK) ini merupakan program tahunan dari Kementerian Riset Teknologi dan Pendidikan Tinggi (Kemenristekdikti) dan dikhususkan bagi mahasiswa yang menerima bantuan berupa program bidikmisi.</p>\r\n\r\n<p>Kepala Pelaksana Biro BAKPK Dr. Eko Purwanto, SE, Msi dalam sambutannya mengatakan bahwa mahasiswa peserta TOT ini bisa mengikuti semua rangkaian kegiatan dengan baik &ldquo; hal ini dikhususkan agar mahasiswa bisa menjadi pembelajaran yang berguna bagi masa depan mereka nantinya&rdquo;.</p>\r\n\r\n<p>TOT Outbond yang berlangsung selama tiga hari pun bekerjasama dengan Komando Distrik Militer (KODIM) Surabaya Timur sebagai instruktur dengan beberapa materi kepemimpinan termasuk jurit malam untuk melatih kemampuan dan keberanian masing &ndash; masing individu dalam menentukan pilihan.</p>\r\n\r\n<p>Adapun acara ini merupakan salah satu bentuk implementasi kurikulum pembentukan karakter dan mendukung terwujudnya atmosfir akademik yang berwawasan bela negara guna penguatan dan percepatan terwujudkan visi dan misi UPN Veteran Jawa Timur sebagai Kampus Bela Negara.</p>\r\n\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Selanjutnya, Eko Purwanto pun berharap dengan acara TOT ini mahasiswa bidikmisi bisa menjadi pribadi yang berjiwa pemimpin&nbsp; yang dapat memimpin dirinya sendiri maupun dilingkungannya. Menjadi mahasiswa yang religius harmonis, cerdas, unggul dan nasionalis serta bisa semakin berinovasi, berprestasi dan sukses di masa depan. (ali/niz)</p>\r\n\r\n<p>&nbsp;</p>\r\n', '90a86f061102c795d0b2062754d9d0ac.jpeg', '2018-01-13 19:57:57'),
-(15, 'kuliah_atau_kepanitiaan', 'Kuliah Atau kepanitiaan', '<p>Halo guys... apa kabar nih liburannya? Buat lo anak kelas 12 &amp; alumni mungkin lagi harap-harap cemas ya nunggu pengumuman SBMPTN 2016. Atau mungkin ada juga yang masih sibuk ikut beberapa Ujian Saringan Mandiri sebagai alternatif lain masuk kuliah selain SBMPTN &amp; SNMPTN. Nah, terlepas dari hasil pengumuman SBMPTN, gua mau cerita-cerita dikit nih tentang dunia perkuliahan di kampus. Jadi bagi lo yang sebentar lagi masuk ke dunia perkuliahan, atau bagi para alumni zenius yang sekarang lagi menempuh kuliah di semester awal kuliah, kemungkinan&nbsp;topik yang akan gua bahas ini bakalan cocok dan bersentuhan&nbsp;banget sama keseharian lo.</p>\r\n\r\n<p>Oke, lo mungkin udah bisa nebak sendiri apa yang mau dibahas dengan ngeliat judul artikel di atas. Yak,&nbsp;kesibukan di dunia perkuliahan emang macem-macem deh!&nbsp;Dan hal itulah&nbsp;yang membuat mahasiswa seringkali&nbsp;harus memilih kegiatan&nbsp;apa yang mau dijalaninya. Ada tipe mahasiswa yang memang fokusnya cuma kuliah, ngerjain tugas, belajar buat ujian, dan mengejar nilai akademis (baca: IPK) setinggi mungkin. Ada&nbsp;mahasiswa yang malah fokus sama organisasi kemahasiswaan, ada juga tipe yang sibuk dengan UKM (unit kegiatan mahasiswa) dan kerjaannya ikut lomba ini-itu&nbsp;atau pertukaran pelajar sampai ke luar negeri. Belum lagi, tipe mahasiswa yang suka asik-asikan aja ikut&nbsp;kepanitiaan acara fakultas. Wah, macem-macem deh pokoknya!</p>\r\n\r\n<p>Nah, biasanya nih... bagi para mahasiswa baru di awal-awal semester, bakalan ngerasa&nbsp;kaget banget dengan segudang jenis kegiatan yang bisa mereka pilih. Tapi di sisi lain, timbul juga dilema untuk fokus mau ngerjain apa. Sampai biasanya muncul 2 macam pendapat yang kurang-lebih bunyinya&nbsp;seperti ini:</p>\r\n\r\n<ol>\r\n	<li>Kuliah itu beda sama waktu SMA, jangan cuma dihabisin waktunya buat belajar &amp; fokus dengan nilai akademis aja. Pengalaman di organisasi dan prestasi di UKM nantinya akan jauh lebih menentukan kesuksesan lo dan kematangan lo di dunia kerja!</li>\r\n	<li>Ah organisasi &amp; kepanitiaan cuma bikin sibuk ga puguh! Ujung-ujungnya waktu kuliah cuma abis&nbsp;untuk&nbsp;rapat panitia melulu. Gara-gara sibuk kepanitaan, ada yang&nbsp;sampai bela-belain bolos kuliah, ga ngerjain tugas, sampai nilai ujian semester berantakan semua. Namanya lagi kuliah, berarti nomor satu itu belajar dan kuliah yang bener!&nbsp;Bukan malah sibuk ga jelas&nbsp;tapi nilai akademis ancur lebur.</li>\r\n</ol>\r\n\r\n<p><a href=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/meme-kuliah.jpg\"><img alt=\"meme kuliah\" src=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/meme-kuliah.jpg\" style=\"height:389px; width:504px\" /></a></p>\r\n\r\n<p>Nah, bagi lo yang udah kuliah... gua yakin lo ga asing lagi dengan 2 tipe pandangan di atas. Bagi yang belum atau sebentar lagi mau kuliah, gua harap tulisan ini bisa jadi tips lebih awal untuk menghadapi dinamika kehidupan kuliah. Khusus buat lo yang belum pernah nyentuh dunia perkuliahan, mungkin agak asing dengan istilah IPK, UKM, terus apa bedanya organisasi dan kepanitaan (waktu SMA kan cuma ada 1 doang, namanya OSIS). Oke, berikut di bawah ini adalah penjelasan singkatnya:</p>\r\n\r\n<ol>\r\n	<li><strong>IPK</strong>: Singkatan dari <strong>Indeks Prestasi Kumulatif</strong>. IPK merupakan alat ukur prestasi lo selama lo kuliah di kampus lo. Kasarnya, keseluruhan nilai lo tuh bakal direpresentasikan dengan angka (indeks) dari skala 0.00-4.00 dan besarnya IP tersebut ditentukan dengan nilai mata kuliah lo (dari nilai A - E) dikali dengan bobot sks masing-masing mata kuliah tersebut. Nantinya, kalo IP lo setiap semester (istilahnya IP/IPS) digabung sampai semester akhir kelulusan, dan menjadi IPK.</li>\r\n	<li><strong>ORGANISASI</strong>: kesatuan (susunan dan sebagainya) yang terdiri atas bagian-bagian (orang dan sebagainya) dalam perkumpulan dan sebagainya untuk tujuan tertentu.&nbsp;Biasanya, organisasi punya periode kepengurusan yang relatif lebih lama daripada kepanitiaan (rata-rata 6 bulan sampai 1 tahun). Kemudian, anggota kepengurusannya juga diwariskan dari angkatan lama, ke angkatan baru (ada kaderisasi).&nbsp;Contoh organisasi: BEM, Himpunan Mahasiswa, dll.</li>\r\n	<li><strong>KEPANITIAAN</strong>: Keanggotaan yang berisikan panitia. Panitia di sini merupakan kelompok orang yang ditunjuk atau dipilih untuk mempertimbangkan atau mengurus hal-hal yang&nbsp;sesuai dengan kebutuhan acaranya. Contohnya panitia seksi acara, seksi dokumentasi, seksi dekorasi, dll. Biasanya, kepanitiaan dibentuk untuk ngurusin acara-acara kampus&nbsp;seperti seminar, talkshow, event bursa kerja, ospek fakultas, dll.</li>\r\n	<li><strong>UKM</strong>: Singkatan dari <strong>Unit Kegiatan Mahasiswa</strong>. Kalo gampangnya sih ini seperti semacam extrakurikuler waktu di SMA, tapi cakupan kegiatannya lebih serius dan skalanya bisa sampai internasional. Contohnya UKM pecinta alam, debat, musik, olahraga, bahasa, dll. Kalo UKM kampus tersebut punya sejarah prestasi yang bagus, ga jarang bisa sampai didanai kampus untuk ikutan lomba sekelas internasional di&nbsp;luar negeri lho!</li>\r\n</ol>\r\n\r\n<p>Oke, gua harap sekarang lo udah paham ya apa bedanya organisasi, kepanitiaan, UKM, dll. Nah sekarang kita balik lagi nih ke masalah utama kita.</p>\r\n\r\n<p><a href=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/UKM-Mahasiswa.jpg\"><img alt=\"UKM Mahasiswa\" src=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/UKM-Mahasiswa.jpg\" style=\"height:534px; width:639px\" /></a></p>\r\n\r\n<p>Berbagai contoh dan illustrasi kegiatan Organisasi UKM Mahasiswa</p>\r\n\r\n<h3><strong>Benarkan ikut organisasi dan kepanitiaan bisa menyita waktu kuliah lo?</strong></h3>\r\n\r\n<p>Jawaban gue: tergantung. Tergantung sama banyaknya mata kuliah yang lo ambil, organisasi/kepanitiaan yang lo ambil, dan kegiatan-kegiatan di luar kampus yang harus lo jalanin. Berdasarkan pengalaman gue secara umum:&nbsp;<strong>IYA</strong>, organisasi dan kepanitiaan di kampus cenderung akan menyita waktu kuliah.</p>\r\n\r\n<p>Hal ini bakal kerasa banget terutama untuk para mahasiswa baru (semester awal) yang masih belum paham dengan porsi kesibukan di dunia kuliah. Ada mata kuliah tertentu yang cenderung santai, ada yang matkul lain yang emang terkenal sibuk banget... dan hal-hal kayak gitu cuma diketahui dari pengalaman atau cerita temen kampus yang udah ngambil mata kuliahnya. Masalahnya nih,&nbsp;biasanya mahasiswa baru itu (termasuk&nbsp;gue juga jaman dulu) rada-rada gak mikir panjang untuk ngambil tawaran ikut organisasi dan kepanitiaan. Hahaha, kesalahan gua itu jangan ditiru yah!</p>\r\n\r\n<p>Jadi, sebelum lo mau ambil kuliah atau memutuskan ikut kepanitiaan, gua saranin lo coba tanya-tanya kakak angkatan dulu apakah mata kuliah atau acara kepanitiaan tersebut sibuk atau nggak. Dengan begitu, lo jadi bisa ngira-ngira porsi kesibukan yang wajar untuk semester tersebut.</p>\r\n\r\n<h3><strong>Sebetulnya lebih penting mana, sih? Fokus ke akademis (IPK) atau ikut kepanitiaan dan organisasi?</strong></h3>\r\n\r\n<p>Jawaban gue lagi-lagi: tergantung. Tergantung keputusan lo sendiri mau fokusin kehidupan kuliah lo ke mana. Inilah bedanya dunia kuliah dan dunia SMA. Waktu SMA mungkin lo terbiasa &#39;ngikutin arus&#39; aja sama temen-temen sekelas. Karena emang alur kegiatan jaman SMA cenderung lebih seragam dan terstandarisasi dari pihak sekolah. Nah, masalahnya lo ga bisa pakai mindset itu waktu kuliah. Kalo lo &#39;ngikut arus&#39; aja (baca: nerima setiap tawaran kepanitiaan acara) bisa-bisa tanpa sadar lo terikat sama tanggung jawab dan kesibukan di luar batas kemampuan dan nguras waktu lo habis-habisan. Jadi sekali lagi, lebih penting yang mana itu justru harus lo sendiri yang putuskan. Lo mau punya prestasi akademis yang bagus dengan pengalaman organisasi yang cukup, atau lo mau punya pengalaman organisasi segudang dengan nilai akademis yang standard? Ga ada yang lebih jelek/bagus karena semua itu tergantung tujuan hidup lo ke depannya mau kemana.</p>\r\n\r\n<p><a href=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/banner-ipk-vs-organisasi.jpg\"><img alt=\"banner ipk vs organisasi\" src=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/banner-ipk-vs-organisasi.jpg\" style=\"height:534px; width:640px\" /></a></p>\r\n\r\n<p>Sekadar bocoran, kalau lo emang mau fokus dalemin bidang disiplin ilmu lo, terus lo mau ngelanjutin S2 di luar negeri dan berharap untuk dapetin beasiswa. Lo harus hati-hati sama nilai akademis karena&nbsp;seleksi dalam bidang akademis cukup ketat. Rata-rata mereka (kampus luar negeri) pasang standar minimal lo punya IPK 3.00, bahkan, beberapa universitas besar dan ternama pasang standar IPK minimal 3.7 supaya lo bisa dapet beasiswa full di luar negeri. Tapi selain itu, ada beberapa&nbsp;tes juga yang harus lo lalui&nbsp;mencapai standar angka tertentu. Tes-tes itu misalnya TOEFL/IELTS, GRE, GMAT, dll. Jadi, kalau misalnya IPK lo gak gede-gede amat, jangan berputus asa dan patah harapan. Selama lo bisa kompensasi itu dengan skor-skor tes lo yang lain, trus lo punya surat rekomendasi dan surat motivasi yang meyakinkan, lo masih punya kemungkinan untuk keterima di universitas yang ternama.</p>\r\n\r\n<p>Di sisi lain, ikut kepanitiaan dan organisasi bisa nambah pengalaman elo, baik dalam segi komunikasi, terutama&nbsp;juga untuk nambah&nbsp;<em>networking</em>. Dari aktif di organisasi, kepanitiaan, dan UKM... lo bisa mencerminkan sisi kualitas lain seperti integritas, kedisiplinan, kerja keras, dan tanggung jawab... yang bisa jadi bikin&nbsp;lo dapet banyak kesempatan ke depannya. Gak jarang juga lho, mahasiswa yang aktif di organisasi, kepanitiaan, &amp; UKM bakal dapat kesempatan lebih awal, seperti pertukaran pelajar ke luar negeri, lomba paduan suara sampai ke Eropa, didanai kampus untuk naik gunung Everest bersama tim pecinta alam, sampai tawaran posisi tertentu dalam organisasi politik.</p>\r\n\r\n<p>Jadi, lo mau kehidupan kuliah yang seperti apa? Terserah lo tapi yang pasti jadikan tujuan lo itu sebagai patokan untuk menentukan prioritas lo. Pastiin lo nentuin rencana lo habis lulus mau ngapain. Menurut gue, sah-sah aja kalau lo mau fokus ke akademis doang, dan sah-sah aja kalau lo mau fokus ke organisasi dan kepanitiaan. Selama lo bisa mempertanggungjawabkan apa yang lo lakuin, kenapa enggak?</p>\r\n\r\n<h3><strong>Kesalahan Umum Bagi Mahasiswa yang aktif di Organisasi, Kepanitiaan, dan UKM.</strong></h3>\r\n\r\n<p>Mungkin beberapa di antara lo ada yang mulai mikir dan berkontemplasi, kira-kira kehidupan kuliah lo mau diarahkan kemana. Nah, khusus buat lo yang emang berminat aktif dalam kegiatan non-akademis, gua mau ceritain sedikit beberapa kesalahan umum yang biasanya dilakukan oleh mahasiswa.</p>\r\n\r\n<p>Oke, sebelum gua masuk ke kesalahan umum mahasiswa, gua mau ceritain dikit tentang dunia organisasi di kampus gue (Universitas Indonesia) sebagai refleksi atau gambaran buat lo. Kalau lo baca artikel gue tentang <a href=\"https://www.zenius.net/blog/11609/kuliah-di-ui-universitas-indonesia\">seluk-beluk kuliah di UI</a>, gue sempet nyinggung tentang skor kegiatan UI yang belakangan ini lagi anjlok menurut Kemenristekdikti. Wah kenapa bisa gitu ya? Singkatnya sih,&nbsp;berdasarkan UURI&nbsp;Nomor 12 Tahun 2012 Tentang Pendidikan Tinggi, merupakan kewajiban Perguruan Tinggi untuk mengadakan&nbsp;kegiatan yang berkaitan sama <strong>pendidikan, penelitian, dan pengabdian ke masyarakat</strong> atau biasa disebut dengan <strong>Tri Dharma Perguruan Tinggi</strong>. Hal inilah yang harusnya dijadiin &ldquo;landasan utama&rdquo; mahasiswa untuk ngadain kegiatan atau aksi-aksi di kampus.</p>\r\n\r\n<p>Nah, dari prediksi gua sih... salah satu hal yang membuat peringkat UI menurun itu&nbsp;karena&nbsp;acara di kampus UI&nbsp;tuh terlalu banyak, dan (sayangnya)&nbsp;secara umum, gue ngeliat banyak acara-acara di UI yang gak ada urgensinya sama Tridharma Perguruan Tinggi dan gak <em>well-executed</em>. Padahal, panitia-panitianya udah capek mempersiapkan acaranya sampai harus ngorbanin waktu buat nugas dan kelas. Tapi ga jarang kalo dipikir-pikir lagi, tujuan acaranya itu sebetulnya ga penting-penting amat bagi pendidikan, penelitian, dan pengabdian masyarakat.</p>\r\n\r\n<p>Gak jarang juga,&nbsp;acara-acara di kampus&nbsp;<strong>kebanyakan </strong>masih pakai pola pikir :</p>\r\n\r\n<blockquote>\r\n<p><em>&ldquo;Oke, kita udah bikin acara ini nih, seru juga ternyata.&nbsp;berikutnya kita bikin acara apa lagi ya?&ldquo;</em></p>\r\n</blockquote>\r\n\r\n<p>Jadinya bikin acara kampus cuma jadi ajang seru-seruan doang, tujuannya dibikin-bikin aja supaya dana dari rektorat turun. Padahal menurut gua sih, seharusnya sebelum bikin acara, jauh lebih tepat kalo dimulai dengan pertanyaan: <em>&quot;Sejauh mana acara kita nanti akan bermanfaat? Bakal guna gak sih? Efek positif&nbsp;bagi yang dateng ke acara kita apa?&nbsp;dll&rdquo;</em> Nah, jangan sampai acara kampus itu terus dilaksanakan&nbsp;tanpa adanya refleksi dan evaluasi hanya&nbsp;karena &ldquo;tradisi&rdquo;.</p>\r\n\r\n<p><a href=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/meme-kepanitiaan.jpg\"><img alt=\"meme kepanitiaan\" src=\"https://www.zenius.net/blog/wp-content/uploads/2016/06/meme-kepanitiaan.jpg\" style=\"height:261px; width:462px\" /></a></p>\r\n\r\n<p>Nah, dari cerita singkat gua di atas, gua harap bisa jadi acuan buat lo yang mau ikutan acara kepanitiaan di kampus. Intinya sih, kalaupun lo memutuskan untuk ikut organisasi/kepanitiaan, pastikan bahwa hal tersebut bisa bermanfaat&nbsp;bagi elo, bisa ngembangin <em>skill</em> yang lo punya, bisa mengasah&nbsp;kemampuan <em>leadership lo, a</em>tau minimal sekadar bisa menambah pengetahuan lo tentang bidang tertentu&nbsp;lo. Intinya sih&nbsp;jangan sampai lo sibuk dengan berbagai acara yang ga ada manfaatnya, &amp;&nbsp;tanpa sadar&nbsp;cuma buang-buang waktu lo doang.</p>\r\n\r\n<blockquote>\r\n<p><em>&quot;Wah, kalau gitu sia-sia dong organisasi dan kepanitiaan yang ada di kampus? Mendingan gak usah diadain aja apa ya?&quot;</em></p>\r\n</blockquote>\r\n\r\n<p>Jangan dipukul rata semua gitu sih. Menurut gue, adanya organisasi dan kepanitiaan di kampus tuh penting banget sebagai wadah bagi mahasiswa untuk nyalurin minat dan bakat mereka. Cuma ya kalau kegiatannya gak ada esensinya sama sekali, mahasiswa gak akan dapat apa-apaan selain dapetin rasa capek dan omelan dari kepala bidang/divisi mereka. Nah, berikut di bawah ini adalah <strong>beberapa ciri organisasi dan kepanitiaan akan menurut gua bermanfaat bagi mahasiswa</strong>:</p>\r\n\r\n<ol>\r\n	<li>Tujuannya jelas, latar belakang diadakannya organisasi/kepanitiaan tersebut berlandaskan kebutuhan dunia riset, atau bermanfaat bagi mahasiswa/masyarakat.</li>\r\n	<li>Manajemen sumber dayanya jelas. Siapa yang mendukung adanya acara tersebut, dananya turun dari mana, siapa aja yang aktif dalam kegiatannya. Gimana sejarah latar belakang aktivitasnya. Semuanya menurut gua harus lo telusuri dulu.</li>\r\n	<li>Penempatan anggota sesuai dengan minat dan bakat. Gue sering banget ngedenger temen-temen gue yang narikin anak-anak (terutama mahasiswa baru) untuk masuk ke kepanitiaan/organisasi mereka karena mereka kekurangan sumber daya manusia. Mereka yang ga tau apa-apa, disuruh pegang seksi keselamatan &amp; rescue, atau mereka yang ga biasa pegang kamera, disuruh jadi seksi dokumentasi. Intinya sih, sebelum lo memutuskan untuk gabung ke kepanitiaan atau jadi pengurus organisasi, pastikan dulu lo tau lo bakal ngapai-ngapain aja dan pastikan bahwa lo siap untuk nanggung konsekuensi yang akan lo terima kalau gabung.</li>\r\n</ol>\r\n\r\n<h1><strong>Kesimpulan</strong></h1>\r\n\r\n<p>Kalo kita balik ke pertanyaan awal:<strong>&nbsp;</strong></p>\r\n\r\n<blockquote>\r\n<p><em>&quot;Lebih baik ngejar IPK tinggi atau Aktif Organisasi / Kepanitiaan?&quot;</em></p>\r\n</blockquote>\r\n\r\n<p>Jawaban gue: suka-suka lo. Tergantung sama prioritas lo. Banyak-banyak aja ngobrol sama senior, atau konsultasi ke dosen pembimbing ketika lo bingung. Dan yang paling penting, pastikan lo tau betul kenapa lo ikut organisasi atau kepanitaan tersebut. Jangan sampai lo terpaksa ikut cuma karena sekadar ikut-ikutan temen doang. Mungkin waktu SMA, setiap kegiatan sekolah dilakukan barengan, tapi dunia&nbsp;kuliah tuh beda, lo ga harus ikut2an temen2 lo lagi ngelakuin apa. Lo bebas menentukan kegiatan lo sendiri. Lo betul2 punya kebebasan fokus untuk belajar ngejar prestasi akademis atau ikut kegiatan2 tertentu.</p>\r\n\r\n<p>Jadi prinsipnya: tentukan prioritas lo sendiri! Kalau lo ikut kepanitaan, pastikan tujuannya emang bermanfaat buat lo, entah itu koneksi, entah itu pengalaman kerja, dll. Kalo lo mau fokus akademis, boleh juga. Pastikan lo mau fokus ngejar nilai akademis karena emang lo mau ngejar ilmunya, karena lo mau berkarya di bidang disiplin ilmu lu. Karena target lu nanti jadi ahli / pakar yang handal, atau senggaknya lo mau kerja di tempat yang membutuhkan pemahaman yg mendalam terhadap ilmu lo.&nbsp;Mantepin bener-bener pilihan elo. <em>And good luck for that!&nbsp;</em></p>\r\n\r\n<p>****</p>\r\n\r\n<p>PS. Semua yang gue tuangkan dalam tulisan ini sepenuhnya adalah opini pribadi gue dan gak mewakili pandangan Zenius Education secara umum. Mungkin temen-temen yang kuliah di UI atau universitas lain punya pendapat berbeda terkait hal ini. Tapi seperti yang sudah gue singgung di poin pertama, perbedaan pendapat itu wajar,&nbsp;mari kita diskusi baik-baik di kolom komentar yang tersedia di bawah artikel ini. <img alt=\"????\" src=\"https://s.w.org/images/core/emoji/2.2.1/svg/1f642.svg\" /></p>\r\n\r\n<h1><strong>==========CATATAN EDITOR===========</strong></h1>\r\n\r\n<p>Kalo ada diantara kamu&nbsp;yang mau ngobrol atau diskusi&nbsp;sama Sasa&nbsp;tentang dunia perkuliahan di UI,&nbsp;langsung aja tinggalin <em>comment</em> di bawah artikel ini. Bagi kamu&nbsp;calon mahasiswa yang pengen tau dunia perkuliah, berikut&nbsp;di bawah ini adalah beberapa artikel rekomendasi yang bisa jadi cocok buat kamu:</p>\r\n\r\n<ul>\r\n	<li>\r\n	<p><a href=\"https://www.zenius.net/blog/11702/biaya-kuliah-beasiswa-universitas-ptn\" target=\"_blank\">Informasi Lengkap Biaya dan Beasiswa Kuliah PTN</a></p>\r\n	</li>\r\n	<li>\r\n	<p><a href=\"https://www.zenius.net/blog/2922/perbedaan-masa-kehidupan-kuliah-sma\" target=\"_blank\">Apa Bedanya Kehidupan Kuliah dengan Masa SMA?</a></p>\r\n	</li>\r\n	<li>\r\n	<p><a href=\"https://www.zenius.net/blog/4472/belajar-berlatih-kemampuan-baru-skill-musik-olahraga-seni\" target=\"_blank\">Resep Rahasia untuk Belajar Hal yang Baru!</a></p>\r\n	</li>\r\n	<li>\r\n	<p><a href=\"https://www.zenius.net/blog/4029/kehidupan-dunia-kuliah-kampus-seru-asik\" target=\"_blank\">Gimana Sih Serunya Tahun Pertama Kuliah?</a></p>\r\n	</li>\r\n</ul>\r\n', '4a435bc427b2ac83d6c488bee16019f1.jpeg', '2018-01-13 20:20:23'),
-(17, 'KSAL_Tegaskan_Agar_Mahasiswa_UPN_Veteran_Jawa_Timur_Memiliki_Kesadaran_Geografi_Untuk_Membangun_Bangsa', 'KSAL Tegaskan Agar Mahasiswa UPN Veteran Jawa Timur Memiliki Kesadaran Geografi Untuk Membangun Bangsa', '<p>Penguatan bela negara di lingkungan mahasiswa UPN Veteran Jawa Timur semakin dikukuhkan dengan adanya &ldquo;Ceramah Umum Geographical Awareness, Dalam Mewujudkan Upaya Bela Negara dan Keamanan Nasional&rdquo; yang diberikan oleh Kepala Staf TNI Angkatan Laut, Laksamana TNI Ade Supandi, S.E., M.A.P di Gedung Serbaguna Giriloka, jumat siang (23/3).<br />\r\nAcara yang diikuti oleh 800 mahasiswa semester 2 ini turut pula dihadiri oleh Pangarmatim Laksda TNI Didik Setiyono, Kadispenal Laksma TNI Gig JM Sipasulta, Kadisdikal Kolonel Laut (S) Ivan Yulivan, Komandan Lantamal V Kolonel Laut (P) Edwin, Ketua Paguyuban Rektor PTNB Jatim Drs. Moh. Hasan, MSc. PhD, para dosen UPN Veteran Jawa Timur.<br />\r\nAcara diawali dengan menyanyikan lagu Indonesia Raya, Mars Bela Negara, dan Mars UPN oleh Paduan Suara Mahasiswa UPN Veteran Surabaya serta dilanjutkan dengan sambutan Rektor UPN Veteran Surabaya Prof. Dr. Ir. Teguh Soedarto, MP.<br />\r\nKemudian, Dihadapan ribuan mahasiswa yang hadir dalam kesempatan itu, Kasal menyampaikan dalam paparannya bahwa, dua pertiga wilayah Indonesia&nbsp; merupakan lautan dan kepulauan terbesar di dunia yang berada pada posisi strategis dengan sumber daya alam melimpah.<br />\r\n<img alt=\"IMG 8052\" src=\"https://www.upnjatim.ac.id/images/upnjatim/berita/260318/IMG_8052.JPG\" style=\"float:right; height:156px; margin:5px; width:250px\" />&quot;Konstelasi geografis Indonesia dengan luas wilayah yuridiksi nasional (yurnas) 7,8 juta km2 dengan panjang pantai 81.000 Km, jumlah pulau 17.499 pulau dan luas laut yuridiksi nasional (yurnas) 5,8 juta km2 terdiri dari laut nusantara 2,95 juta km2, laut teritorial 0,3 juta km2 dan ZEEI 2, 55 Km2 selanjutnya luas daratan 2,0 juta km2, oleh karena itu Indonesia merupakan bangsa maritim yang besar&rdquo;, tegasnya.<br />\r\nMenurut orang nomor satu di jajaran TNI AL tersebut, generasi muda pada saat ini kurang memerhatikan perkembangan materi geografi secara detail, sehingga perlu digemakan kembali tentang arti dari geografis Indonesia yang pada dasarnya mengandung banyak SDA yang terabaikan selama ini.<br />\r\nBanyaknya permasalahan narkoba yang terjadi pada saat ini juga tidak luput dari permasalahan geografi Indonesia yang berada di jalur silang dunia. Indonesia dipandang&nbsp; dan diperhitungkan akan menjadi negara yang maju, potensi generasi muda (mahasiswa) yang banyak dan memiliki talenta tinggi, yang berusaha dirusak dengan narkoba.<br />\r\nPosisi silang kita berada diantara dua samudera dan dua benua, namun kita sendiri kurang memahami arti dari posisi yang begitu strategis ini. Posisi geografis ini sangat baik bila dibandingkan dengan beberapa negara lainnya.<br />\r\nTerkait hal tersebut, Kasal berpesan agar para sebagai generasi muda harus optimis, tidak boleh merasa kecil, dan harus bangkit untuk membangun negara kita agar lebih maju dan besar di masa mendatang.<br />\r\n<img alt=\"IMG 8238\" src=\"https://www.upnjatim.ac.id/images/upnjatim/berita/260318/IMG_8238.JPG\" style=\"float:left; height:183px; margin:5px; width:250px\" />&ldquo;Sumber daya hayati kita sangat luar biasa dan itu dibuktikan oleh para peneliti dari luar negeri bahwa sumber daya kita sangat melimpah dibanding negara luar. Perjuangan para senior kita yang memperjuangkan luas perairan dan panjang garis pantai kita semakin bertambah sehingga dapat nikmati hasilnya sampai dengan sekarang,&rdquo; ujarnya.<br />\r\nSelanjutnya, Rektor UPN Veteran Jawa Timur, Prof. Dr. Ir. Teguh Soedarto, MP mengucapkan terima kasihyang sebesar-besarnya kepada Kasal Laksamana TNI Ade Supandi, S.E., M.A.P., beserta jajaran TNI AL atas kehadirannya dan kesediannya memberikan materi kepada para Mahasiswa UPN Surabaya, sekaligus menutup kegiatan ini dengan memberikan cinderamata. (niz)</p>\r\n', '4f090f25c8b1cf9190724565ce58d080.JPG', '2018-04-01 10:58:38'),
-(18, 'yt', 'yt', '<p>fg</p>\r\n', '900702a3f9345d33e20f4f215ceb587c.jpg', '2018-12-25 04:53:13'),
-(19, 'hape', 'hape', '<p>bsb</p>\r\n', 'e74eb3ac16eb948d7d161c2a5c1b4e93.png', '2018-12-25 04:53:47');
-
 -- --------------------------------------------------------
 
 --
@@ -257,16 +340,6 @@ CREATE TABLE `tbl_informasi` (
   `info_image` varchar(40) DEFAULT NULL,
   `info_tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_informasi`
---
-
-INSERT INTO `tbl_informasi` (`info_id`, `id_judul`, `info_judul`, `info_isi`, `info_image`, `info_tanggal`) VALUES
-(5, 'KHS_Semester_Ganjil', 'KHS Semester Ganjil', 'kasal', '3c6ab1947db92b2e1ebd402a9740db6d.jpg', '2018-01-29 10:08:01'),
-(6, 'as', 'as', '<p>ert</p>\r\n', '52660a50374a3b79e65700f5362314c3.png', '2018-12-25 04:46:15'),
-(7, 'ret', 'ret', '<p>fg</p>\r\n', '92bc158d0d6f93a937d06e05ee56777a.jpg', '2018-12-25 04:48:11'),
-(8, 'hape', 'hape', '<p>hape</p>\r\n', '1fac075bbf34990d2c59f3c44870b438.png', '2018-12-25 04:50:17');
 
 -- --------------------------------------------------------
 
@@ -288,13 +361,20 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `nama`, `email`, `level`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Administrator', 'admin@admin.com', 1),
+(1, 'admin', 'f9a19db0ee956cd1285bcebf243bf7b8', 'Administrator', 'admin@admin.com', 1),
 (2, 'guest', '084e0343a0486ff05530df6c705c8bb4', 'Guest', 'guest@gmail.com', 2),
-(3, 'afrizal', '8DD1C41FE9A651884FA0A7802A6AEB85', 'afrizal', 'afrizal@gmail.com', 1);
+(3, 'afrizal', 'f9a19db0ee956cd1285bcebf243bf7b8', 'afrizal', 'afrizal@gmail.com', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `ci_sessions`
+--
+ALTER TABLE `ci_sessions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ci_sessions_timestamp` (`timestamp`);
 
 --
 -- Indexes for table `file_kelasc`
@@ -327,6 +407,12 @@ ALTER TABLE `tbl_informasi`
   ADD PRIMARY KEY (`info_id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -346,13 +432,13 @@ ALTER TABLE `folder_kelasc`
 -- AUTO_INCREMENT for table `tbl_berita`
 --
 ALTER TABLE `tbl_berita`
-  MODIFY `berita_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `berita_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_informasi`
 --
 ALTER TABLE `tbl_informasi`
-  MODIFY `info_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `info_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -41,26 +41,26 @@ class Admin extends CI_Controller{
   $this->load->view('v_footer',$data);
 }
 function updateinfo(){
-  $berita_id = $this->input->post('info_id');
-  $berita_judul = $this->input->post('info_judul');
+  $berita_id = $this->input->post('berita_id');
+  $berita_judul = $this->input->post('berita_judul');
   $berita_isi = $this->input->post('info_isi');
 
   $data = array(
-    'info_judul' => $info_judul,
-    'info_isi' => $info_isi,
+    'info_judul' => $berita_judul,
+    'info_isi' => $berita_isi,
   );
 
   $where = array(
-    'info_id' => $info_id,
+    'info_id' => $berita_id,
   );
 
   $this->m_data->update_data($where,$data,'tbl_informasi');
-  redirect('..admin/listagenda');
+  redirect('admin/listinfo');
 }
 function hapusinfo($id){
   $where = array('id_judul' => $id);
   $this->m_data->hapus_data($where,'tbl_informasi');
-  redirect('..admin/listinfo');
+  redirect('admin/listinfo');
 }
  function editberita($id){
   $where = array('id_judul' => $id);
@@ -73,7 +73,7 @@ function hapusinfo($id){
 function hapusberita($id){
   $where = array('id_judul' => $id);
   $this->m_data->hapus_data($where,'tbl_berita');
-  redirect('..admin/listberita');
+  redirect('admin/listberita');
 }
 function updateberita(){
   $berita_id = $this->input->post('berita_id');
@@ -90,7 +90,7 @@ function updateberita(){
   );
 
   $this->m_data->update_data($where,$data,'tbl_berita');
-  redirect('..admin/listberita');
+  redirect('admin/listberita');
 }
  function listberita(){
   $x['data']=$this->m_berita->get_all_berita();
@@ -131,7 +131,7 @@ die('Gagal membuat folder...');
         'kelas' => $kelas
         );
     $this->tampilkan_data->input_data($data,'mahasiswa');
-    redirect('..admin/profil');
+    redirect('admin/profil');
 }
 function hapus($npm,$nama){
   $where = array('nama' => $nama);
@@ -141,7 +141,7 @@ function hapus($npm,$nama){
   if (rmdir($structure)) {
   die('Gagal hapus folder...');
   }
-  redirect('..admin/lihatmahasiswa');
+  redirect('admin/lihatmahasiswa');
 }
 
 function edit($npm){
@@ -179,7 +179,7 @@ function update(){
   );
 
   $this->m_data->update_data($where,$data,'mahasiswa');
-  redirect('..admin/lihatmahasiswa');
+  redirect('admin/lihatmahasiswa');
 }
 }
 ?>

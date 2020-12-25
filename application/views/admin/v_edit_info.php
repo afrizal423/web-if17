@@ -14,7 +14,7 @@
 			</tr>
 			<tr>
 				<td>Isi</td>
-                <td><textarea id="ckeditor" class="form-control" type="text"  name="berita_isi"   value="<?php echo $u->berita_isi ?>"></textarea></td>
+                <td><textarea id="ckeditor" class="form-control" type="text"  name="berita_isi"><?php echo $u->berita_isi ?></textarea></td>
                 <!--<td><img src="<?php echo $u->berita_image ?>"></td>-->
             </tr>
 			

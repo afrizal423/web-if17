@@ -25,8 +25,8 @@
 				<td><a href="<?php echo base_url().'post_berita/view/'.$id;?>"><?php echo $judul;?></a></td>
 			
 				<td>
-			      <?php echo anchor('..admin/editberita/'.$id,'Edit'); ?></td>
-                             <td> <?php echo anchor('..admin/hapusberita/'.$id,'Hapus'); ?>
+			      <?php echo anchor('admin/editberita/'.$id,'Edit'); ?></td>
+                             <td> <?php echo anchor('admin/hapusberita/'.$id,'Hapus'); ?>
 			</td>
 			</tr></tbody>
 			<?php endforeach;?>

@@ -151,4 +151,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="#" data-activates="nav-mobile" class="button-collapse orange-text "><i class="material-icons">menu</i></a>
       </div>
     </nav>
-<button class="w3-deep-orange fa fa-angle-double-up fa-2x " onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<button class="w3-deep-orange fa fa-angle-double-up fa-2x batik" onclick="topFunction()" id="myBtn" title="Go to top"></button>

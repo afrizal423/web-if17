@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'if17.sqlite',
-	'dbdriver' => 'sqlite3',
+	'hostname' => 'remotemysql.com',
+	'username' => 'DZadZmY09X',
+	'password' => 'AzXnzfNxgT',
+	'database' => 'DZadZmY09X',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

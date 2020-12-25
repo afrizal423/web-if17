@@ -45,7 +45,13 @@ class Post_agenda extends CI_Controller{
 	    }
 	                 
 	    }else{
-			redirect('admin');
+			$gambar=null;
+				$jdl=$this->input->post('judul');
+				$idjdl=str_replace(' ','_',$jdl);
+                $berita=$this->input->post('berita');
+
+				$this->m_info->simpan_berita($idjdl,$jdl,$berita,$gambar);
+				redirect('admin/listinfo');
 		}
 				
 	}

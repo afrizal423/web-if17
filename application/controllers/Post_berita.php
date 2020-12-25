@@ -39,13 +39,19 @@ class Post_berita extends CI_Controller{
                 $berita=$this->input->post('berita');
 
 				$this->m_berita->simpan_berita($idjdl,$jdl,$berita,$gambar);
-				redirect('admin/listinfo');
+				redirect('admin/listberita');
 		}else{
 			redirect('admin');
 	    }
 	                 
 	    }else{
-			redirect('admin');
+			$gambar=null;
+			$jdl=$this->input->post('judul');
+			$idjdl=str_replace(' ','_',$jdl);
+			$berita=$this->input->post('berita');
+
+			$this->m_berita->simpan_berita($idjdl,$jdl,$berita,$gambar);
+			redirect('admin/listberita');
 		}
 				
 	}

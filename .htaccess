@@ -1,5 +1,4 @@
 <IfModule mod_rewrite.c>
-php_value memory_limit 900M 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

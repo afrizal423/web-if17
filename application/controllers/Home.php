@@ -30,7 +30,7 @@ class home extends CI_Controller {
 	{
 		$x['datainfo']=$this->m_info->get_all_berita();
 		$x['data']=$this->m_berita->get_all_berita();
-		$data['judul_bar'] = "Teknik Informatika UPNVJT";
+		$data['judul_bar'] = "Teknik Informatika 2017 UPNVJT";
 		$this->load->view('v_header', $data);
 		$this->load->view('index_home', $x);
 		$this->load->view('v_footer', $data);
@@ -62,7 +62,9 @@ class home extends CI_Controller {
 	function viewBerita(){
 		$kode=$this->uri->segment(3); //Uri segment 3 berupa data berbentuk id yang dikirim
 		$x['data']=$this->m_berita->get_berita_by_kode($kode);
-		$this->load->view('v_header', $x);
+		$b=$x['datainfo']->row_array();
+		$data['judul_bar'] = $b['berita_judul'] . " - Teknik Informatika 2017 UPNVJT";
+		$this->load->view('v_header', $data);
 		$this->load->view('admin/v_post_view',$x);
 		$this->load->view('v_footer');
 		
@@ -70,7 +72,9 @@ class home extends CI_Controller {
 	function viewInfo(){
 		$kode=$this->uri->segment(3); //Uri segment 3 berupa data berbentuk id yang dikirim
 		$x['datainfo']=$this->m_info->get_berita_by_kode($kode);
-		$this->load->view('v_header', $x);
+		$b=$x['datainfo']->row_array();
+		$data['judul_bar'] = $b['info_judul'] . " - Teknik Informatika 2017 UPNVJT";
+		$this->load->view('v_header', $data);
 		$this->load->view('admin/v_post_viewinfo',$x);
 		$this->load->view('v_footer');
 		
